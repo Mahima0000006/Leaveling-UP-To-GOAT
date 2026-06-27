@@ -1,0 +1,30 @@
+
+# ==========================================
+# DEV LOG: LEVEL 06 - MY FIRST CALCULATOR
+# ==========================================
+# Using inputs, type casting, and basic math!
+# ==========================================
+
+print("--- WELCOME TO The CALCULATOR ---")
+
+# Step 1: Taking input from user
+# Note: input() gives a string, so we wrap it in int() or float() to do math
+num1 = float(input("Enter first number: "))
+operator = input("Enter operator (+, -, *, /): ")
+num2 = float(input("Enter second number: "))
+
+# Step 2: Logic (Calculations)
+if operator == "+":
+    result = num1 + num2
+elif operator == "-":
+    result = num1 - num2
+elif operator == "*":
+    result = num1 * num2
+elif operator == "/":
+    result = num1 / num2
+else:
+    result = "Invalid Operator!"
+
+
+# Step 3: Printing result using F-strings (The clean way!)
+print(f"Result: {num1} {operator} {num2} = {result}")
